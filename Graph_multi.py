@@ -15,11 +15,12 @@ class Graphing:
    var1 = float(raw_input("? "))
    var2 = float(raw_input("? "))
 
+   #initializes the class for dumping and logging
    ds = Data_store()
-
-
-   #logs user data
+  
+   #dumps user data to output.txt
    ds.dump_data(var1, var2, 'output.txt')
+   ds.load_data('output.txt')
 
    height = var2-var1
    Months = 12
